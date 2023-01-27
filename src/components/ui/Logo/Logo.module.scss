@@ -1,8 +1,9 @@
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 50rem;
+  height: 50rem;
   display: block;
   > svg {
+    width: 90rem;
     fill: $primary-color;
   }
 }

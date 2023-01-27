@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   background: $secondary-bg-color;
-  border-radius: 5px;
+  border-radius: 5rem;
   box-shadow: inset 0 0 20rem 0 $primary-color;
   transition: all 0.5s ease-in-out;
   animation: inset-neon-shadow 2s ease-in-out infinite;
-  padding: 15px;
+  padding: 15rem;
   &:hover {
     transform: scale(1.1);
     animation: outset-neon-shadow 2s ease-in-out infinite;
-    border: 1px solid $primary-color;
+    border: 1rem solid $primary-color;
   }
   > img {
     width: auto;
@@ -20,12 +20,12 @@
   }
 
   > h2 {
-    font-size: 25rem;
+    font-size: 1.5em;
     text-transform: capitalize;
   }
 
   > h3 {
-    font-size: 15rem;
+    font-size: 1.25em;
     text-transform: uppercase;
   }
 }

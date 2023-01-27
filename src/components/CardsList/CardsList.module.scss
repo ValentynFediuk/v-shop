@@ -1,12 +1,12 @@
 .list {
   justify-content: center;
-  max-width: 1500px;
+  max-width: 1500rem;
   margin: 0 auto;
 }
 
 .grid {
-  padding: 100px 0;
+  padding: 100rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(352rem, 1fr));
+  gap: 30rem;
 }

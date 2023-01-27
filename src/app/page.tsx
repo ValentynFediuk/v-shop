@@ -1,7 +1,7 @@
 import { CardsList } from '@/components'
 
 const Home = () => (
-		<CardsList />
+	<CardsList />
 )
 
 export default Home
