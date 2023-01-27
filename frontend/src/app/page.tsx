@@ -1,4 +1,4 @@
-import { CardsList } from '@/components'
+import { CardsList } from '../components'
 
 const Home = () => (
 	<CardsList />

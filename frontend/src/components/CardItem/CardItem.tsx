@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import Image from 'next/image'
-import { CardItemProps } from '@/components/CardItem/CardItem.props'
 import Link from 'next/link'
+import { CardItemProps } from './CardItem.props'
 import styles from './CardItem.module.scss'
 
 export const CardItem: FC<CardItemProps> = ({ img, title, description, price }) => (

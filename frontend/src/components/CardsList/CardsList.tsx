@@ -1,6 +1,6 @@
 import React from 'react'
-import { CardItemsData } from '@/components/CardsList/cards-list.data'
-import { CardItem } from '@/components'
+import { CardItemsData } from './cards-list.data'
+import { CardItem } from '../index'
 import styles from './CardsList.module.scss'
 
 export const CardsList = () => (

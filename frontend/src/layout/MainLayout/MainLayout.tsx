@@ -1,7 +1,7 @@
 import { FC } from 'react'
-import { Footer } from '@/layout/MainLayout/components/Footer/Footer'
-import { Header } from '@/layout/MainLayout/components/Header/Header'
-import { MainLayoutProps } from '@/layout/MainLayout/MainLayout.props'
+import { Footer } from './components/Footer/Footer'
+import { Header } from './components/Header/Header'
+import { MainLayoutProps } from './MainLayout.props'
 import styles from './MainLayout.module.scss'
 
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => (
