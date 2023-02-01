@@ -4,7 +4,6 @@ import { CardsList } from "../components";
 async function getData() {
 	try {
 		const {data} = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/products`);
-		console.log(data.products)
 		return data.products
 	} catch (error) {
 		console.error(error);
