@@ -1,7 +1,23 @@
-import { CardsList } from '../components'
+import axios from "axios";
+import { CardsList } from "../components";
 
-const Home = () => (
-	<CardsList />
-)
+async function getData() {
+	try {
+		const {data} = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/products`);
+		console.log(data.products)
+		return data.products
+	} catch (error) {
+		console.error(error);
+	}
+}
 
-export default Home
+export default async function Home() {
+	const items = await getData()
+
+	return (
+		<CardsList
+			items={items}
+		/>
+
+	)
+}
