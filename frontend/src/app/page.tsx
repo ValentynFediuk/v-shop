@@ -1,22 +1,29 @@
 import axios from "axios";
-import { CardsList } from "../components";
+import { CardsList } from "components";
+import { Suspense } from "react";
+import Loading from "./loading";
 
-async function getData() {
+const getData = async () => {
+	let response
+
 	try {
 		const {data} = await axios.get(`${process.env.NEXT_PUBLIC_BASE_URL}/products`);
-		return data.products
+		response = data.products
 	} catch (error) {
-		console.error(error);
+		throw new Error(`${error}`)
 	}
+
+	return response
 }
 
-export default async function Home() {
+const Home = async () => {
 	const items = await getData()
 
 	return (
-		<CardsList
-			items={items}
-		/>
-
+			<CardsList
+				items={items}
+			/>
 	)
 }
+
+export default Home

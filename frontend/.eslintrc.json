@@ -25,6 +25,7 @@
     "import/resolver": {
       "typescript": {},
       "node": {
+        "paths": ["src"],
         "extensions": [
           ".js",
           ".jsx",
@@ -39,7 +40,6 @@
     "JSX": true
   },
   "rules": {
-    "no-console": 2,
     "react/function-component-definition": [
       2,
       {
@@ -47,6 +47,7 @@
       }
     ],
     "react/state-in-constructor": "off",
+    "no-underscore-dangle": "off",
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",

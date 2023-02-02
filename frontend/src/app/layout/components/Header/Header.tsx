@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Logo } from '../../../../components/ui/Logo/Logo'
+import { Logo } from 'components/ui/Logo/Logo'
 import styles from './Header.module.scss'
 
 export const Header: FC = () => (

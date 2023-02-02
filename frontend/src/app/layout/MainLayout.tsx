@@ -7,7 +7,7 @@ import styles from './MainLayout.module.scss'
 export const MainLayout: FC<MainLayoutProps> = ({ children }) => (
   <div className={styles.layout}>
     <Header />
-    <main>{children}</main>
+      <main>{children}</main>
     <Footer />
   </div>
 )

@@ -4,10 +4,10 @@
   flex-direction: column;
 
   > header {
-    flex: auto;
     position: sticky;
     top: 0;
     z-index: 1;
+    height: 5.5rem;
   }
 
   > main {
@@ -16,6 +16,6 @@
   }
 
   > footer {
-    flex: auto;
+    height: 5.5rem;
   }
 }
